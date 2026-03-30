@@ -1,0 +1,178 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="black_line_track">
+    <static>true</static>
+    <link name="track_link">
+
+      <visual name="vertical1">
+        <pose>0.5 0 0.01 0 0 0</pose>
+        <geometry>
+          <box><size>5 0.5 0.02</size></box> 
+        </geometry>
+        <material><ambient>1 1 0 1</ambient></material>
+      </visual>
+      
+      <visual name="diagonal1">
+        <pose>4 1 0.01 0 0 0.7854</pose>
+        <geometry>
+          <box><size>3 0.5 0.02</size></box> 
+        </geometry>
+        <material><ambient>1 1 0 1</ambient></material>
+      </visual>
+      
+      <visual name="vertical2">
+        <pose>6.5 2 0.01 0 0 0</pose>
+        <geometry>
+          <box><size>3 0.5 0.02</size></box> 
+        </geometry>
+        <material><ambient>1 1 0 1</ambient></material>
+      </visual>
+      
+      <visual name="diagonal2">
+        <pose>9 1 0.01 0 0 -0.7854</pose>
+        <geometry>
+          <box><size>3 0.5 0.02</size></box> 
+        </geometry>
+        <material><ambient>1 1 0 1</ambient></material>
+      </visual>
+      
+      <visual name="horizontal1">
+        <pose>10 -2 0.01 0 0 -1.5708</pose>
+        <geometry>
+          <box><size>4 0.5 0.02</size></box> 
+        </geometry>
+        <material><ambient>1 1 0 1</ambient></material>
+      </visual>
+      
+      <visual name="diagonal3">
+        <pose>9 -5 0.01 0 0 -2.3562</pose>
+        <geometry>
+          <box><size>3 0.5 0.02</size></box> 
+        </geometry>
+        <material><ambient>1 1 0 1</ambient></material>
+      </visual>
+      
+      <visual name="vertical3">
+        <pose>6 -6 0.01 0 0 0</pose>
+        <geometry>
+          <box><size>4 0.5 0.02</size></box> 
+        </geometry>
+        <material><ambient>1 1 0 1</ambient></material>
+      </visual>
+      
+      <visual name="diagonal4">
+        <pose>3 -5 0.01 0 0 -0.7854</pose>
+        <geometry>
+          <box><size>3 0.5 0.02</size></box> 
+        </geometry>
+        <material><ambient>1 1 0 1</ambient></material>
+      </visual>
+      
+      <visual name="vertical4">
+        <pose>1.5 -4 0.01 0 0 0</pose>
+        <geometry>
+          <box><size>1 0.5 0.02</size></box> 
+        </geometry>
+        <material><ambient>1 1 0 1</ambient></material>
+      </visual>
+      
+      <visual name="diagonal5">
+        <pose>0 -3 0.01 0 0 -0.7854</pose>
+        <geometry>
+          <box><size>3 0.5 0.02</size></box> 
+        </geometry>
+        <material><ambient>1 1 0 1</ambient></material>
+      </visual>
+      
+      <visual name="vertical5">
+        <pose>-1.5 -2 0.01 0 0 0</pose>
+        <geometry>
+          <box><size>1 0.5 0.02</size></box> 
+        </geometry>
+        <material><ambient>1 1 0 1</ambient></material>
+      </visual>
+      
+      <visual name="horizontal2">
+        <pose>-2 -1 0.01 0 0 -1.5708</pose>
+        <geometry>
+          <box><size>2 0.5 0.02</size></box> 
+        </geometry>
+        <material><ambient>1 1 0 1</ambient></material>
+      </visual>
+
+      <!--<visual name="right_vertical">
+        <pose>10 5 0.01 0 0 1.5708</pose>
+        <geometry>
+          <box><size>10 0.2 0.02</size></box> 
+        </geometry>
+        <material><ambient>1 1 0 1</ambient></material>
+      </visual>
+
+      <visual name="top_horizontal">
+        <pose>7 10 0.01 0 0 0</pose>
+        <geometry>
+          <box><size>6 0.2 0.02</size></box> 
+        </geometry>
+        <material><ambient>1 1 0 1</ambient></material>
+      </visual>
+
+
+      <visual name="inner_vertical1">
+        <pose>4 8.5 0.01 0 0 1.5708</pose>
+        <geometry>
+          <box><size>3 0.2 0.02</size></box> 
+        </geometry>
+        <material><ambient>1 1 0 1</ambient></material>
+      </visual>
+
+      <visual name="inner_horizontal">
+        <pose>5.5 7 0.01 0 0 0</pose>
+        <geometry>
+          <box><size>3 0.2 0.02</size></box> 
+        </geometry>
+        <material><ambient>1 1 0 1</ambient></material>
+      </visual>
+
+      <visual name="inner_vertical2">
+        <pose>7 5.5 0.01 0 0 1.5708</pose>
+        <geometry>
+          <box><size>3 0.2 0.02</size></box> 
+        </geometry>
+        <material><ambient>1 1 0 1</ambient></material>
+      </visual>
+
+      <visual name="lower_horizontal">
+        <pose>3.5 4 0.01 0 0 0</pose>
+        <geometry>
+          <box><size>7 0.2 0.02</size></box> 
+        </geometry>
+        <material><ambient>1 1 0 1</ambient></material>
+      </visual>
+
+      <visual name="final_vertical">
+        <pose>0 2 0.01 0 0 1.5708</pose>
+        <geometry>
+          <box><size>4 0.2 0.02</size></box> 
+        </geometry>
+        <material><ambient>1 1 0 1</ambient></material>
+      </visual>
+
+
+      <visual name="diagonal1">
+        <pose>8 3 0.01 0.7854 0 0</pose>
+        <geometry>
+          <box><size>3 0.2 0.02</size></box> 
+        </geometry>
+        <material><ambient>1 0 0 1</ambient></material>
+      </visual>
+
+      <visual name="diagonal2">
+        <pose>2 6 0.01 -0.7854 0 0</pose>
+        <geometry>
+          <box><size>3 0.2 0.02</size></box> 
+        </geometry>
+        <material><ambient>0 1 0 1</ambient></material>
+      </visual>-->
+    </link>
+  </model>
+</sdf>
